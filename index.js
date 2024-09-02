@@ -1,12 +1,11 @@
 const http = require('http');
 
-
 const port = 3000;
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, this is your HTTP server!\n');
+    res.end('Hello, this is your HTTP server!');
 });
 
 server.listen(port,  () => {
